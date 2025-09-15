@@ -6,7 +6,7 @@ We integrate a **sensor simulator**, **Modbus TCP protocol**, and an **OpenPLC L
 
 ---
 
-## ✅ Features Implemented (Phase 1)
+## Features Implemented (Phase 1)
 
 - Simulated temperature and humidity sensors using FastAPI  
 - Modbus TCP-based data transmission using PyModbus  
@@ -15,7 +15,7 @@ We integrate a **sensor simulator**, **Modbus TCP protocol**, and an **OpenPLC L
 
 ---
 
-## 🛠️ Technologies Used
+##  Technologies Used
 
 | Layer        | Tool/Library        | Purpose                                 |
 |--------------|---------------------|-----------------------------------------|
@@ -26,8 +26,14 @@ We integrate a **sensor simulator**, **Modbus TCP protocol**, and an **OpenPLC L
 
 ---
 
-## 🏗️ Architecture
+## Architecture
 
-```mermaid
+```
 flowchart LR
-     [FastAPI Sensor Simulator] --> [PyModbus TCP Client]--> C(OpenPLC Runtime)
+     [FastAPI Sensor Simulator] --> [PyModbus TCP Client]--> (OpenPLC Runtime)
+```
+
+
+### Memory Allocation and Basic PLC programming
+
+Refer to [PLC Documentation](Utils/plc_info.md)
